@@ -1,5 +1,5 @@
 <p align="center">
-<img src="ISDC_Car.png">
+<img src="self-driving-car-img.png">
 </p>
 
 ---
@@ -34,3 +34,31 @@ The nanodegree was subdivided into the following chapters:
 6. Navigating Data Structures
 7. Vehicle Motion and Control
 8. Computer Vision and Machine Learning
+
+---
+
+## Projects ##
+
+The following rated projects were part of this nanodegree:
+
+1. **JoyRide - Reverse parking of a self-driving car**
+    ![](Images/ISDC_Project_1.png)
+2. **Implementation of a Matrix Class in Python**
+    ![](Images/ISDC_Project_2.png)
+3. **Translation of a Python Histogram Filter to C++**
+4. **A Star routing algorithm in Python**
+    ![](Images/ISDC_Project_4.png)
+5. **Computer Vision based Traffic Light Classifier**
+    ![](Images/ISDC_Project_5.png)
+
+---
+
+## Interesting optional projects ##
+
+- **Day / Night detection by color channel analysis**
+    - ![](Images/ISDC_Project_5b.png)
+    - ![](Images/ISDC_Project_5b2.png)
+- **Trajectory Reconstruction using Accelerometer**
+    - ![](Images/ISDC_Project_4b.png)
+- **Histogram filter optimization contest**
+    - ![](Images/ISDC_CPP_Contest.png)
