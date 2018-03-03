@@ -1,3 +1,7 @@
+<p align="center">
+<img src="self-driving-car.png">
+</p>
+
 # Self-Driving Car
 
 Learning to build the future, today.
