@@ -3,10 +3,10 @@
 
 Overview
 ---
+
 In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, you will then try out your model on images of German traffic signs that you find on the web.
 
-We have included an Ipython notebook that contains further instructions 
-and starter code. Be sure to download the [Ipython notebook](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). 
+We have included an Ipython notebook that contains further instructions and starter code. Be sure to download the [Ipython notebook](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). 
 
 We also want you to create a detailed writeup of the project. Check out the [writeup template](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup_template.md) for this project and use it as a starting point for creating your own writeup. The writeup can be either a markdown file or a pdf document.
 
@@ -14,6 +14,15 @@ To meet specifications, the project will require submitting three files:
 * the Ipython notebook with the code
 * the code exported as an html file
 * a writeup report either as a markdown or pdf file 
+
+## TODOs
+
+This is the Udacity's Self-driving Car NanoDegree project, the baseline were completed by Zehua Cheng.
+
+For this repo, I personally cooperate with my friends, [Binqiao](https://github.com/kananami) and [Haoyun](https://github.com/xiahaoyun). It's academic training which write an interesting theory based on this project. Our attempts aim at:
+
+1. Using different deep learning models to train the model and see the difference of each models. Such as  VGG, capsule, resnet, and some customized models.
+2. Writing a report about Traffic Sign Classifier.
 
 Creating a Great Writeup
 ---
