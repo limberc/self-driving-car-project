@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Github/self-driving-car-project/fuckCPP/debugging_helpers.cpp
+vector
+-
+iostream
+-
+
+D:/Github/self-driving-car-project/fuckCPP/helpers.cpp
+vector
+-
+iostream
+-
+cmath
+-
+string
+-
+fstream
+-
+
+D:/Github/self-driving-car-project/fuckCPP/localizer.cpp
+helpers.cpp
+D:/Github/self-driving-car-project/fuckCPP/helpers.cpp
+stdlib.h
+-
+debugging_helpers.cpp
+D:/Github/self-driving-car-project/fuckCPP/debugging_helpers.cpp
+
+D:/Github/self-driving-car-project/fuckCPP/simulate.cpp
+localizer.cpp
+D:/Github/self-driving-car-project/fuckCPP/localizer.cpp
+algorithm
+-
+
+D:/Github/self-driving-car-project/fuckCPP/tests.cpp
+iostream
+-
+simulate.cpp
+D:/Github/self-driving-car-project/fuckCPP/simulate.cpp
+

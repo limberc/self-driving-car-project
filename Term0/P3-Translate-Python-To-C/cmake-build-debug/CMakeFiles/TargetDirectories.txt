@@ -1,0 +1,3 @@
+D:/Github/self-driving-car-project/fuckCPP/cmake-build-debug/CMakeFiles/fuckCPP.dir
+D:/Github/self-driving-car-project/fuckCPP/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Github/self-driving-car-project/fuckCPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
