@@ -25,7 +25,7 @@ The projects would so far organized in order of terms where it so far mainly bas
 * [Finding lane lines](https://github.com/LimberenceCheng/self-driving-car-project/blob/master/Term1/LaneLines/P1.ipynb)
 * Behavioral Cloning
 * Advanced Finding Lane Lines
-* Vehicle Detection
+* [Vehicle Detection](https://github.com/LimberenceCheng/self-driving-car-project/tree/master/Term1/Vehicle-Detection)
 * Bayesian Filter
 * Extended Kalman Filter
 * Unscented Kalman Filter
