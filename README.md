@@ -1,16 +1,11 @@
-<p align="center">
+
 <img src="self-driving-car.png">
-</p>
 
-# Self-Driving Car
+# Self Driving Car Learning Projects
 
-Learning to build the future, today.
+**This Repo respect to Udacity, Coursera, MIT Honor Code.** Some of my projects is inspired by programming assignments from Udacity, Coursera, MIT. And some of the projects that I had finished may out of my personal preference on some particular area, like deep learning, SLAM and Kalman Filter, etc. Some projects may be haven't update to this github repo but will soon finish. Thank you Udacity Faculties and classmates. 
 
-Self-driving cars are set to change the way we live with technology. In this program I'm learning the skills and techniques used by self-driving car teams at the most innovative companies in the world including robotics, machine learning, computer vision, and mechanical engineering. 
-
-Self-driving cars represent one of the most significant advances in modern history. Their impact will go beyond technology, beyond transportation, beyond urban planning to change our daily lives in ways we have yet to imagine.
-
-P.S: This Repo respect to Udacity Honor Code. And some of the projects that I had finished may out of my personal preference on some particular area, like deep learning, SLAM and Kalman Filter, etc. Some projects may be haven't update to this github repo but will soon finish. Thank you Udacity Faculties and classmates. 
+The projects would so far organized in order of terms where it so far mainly based on Udacity self-driving car projects, but will soon add some projects beyond the courses has provided. And some of my codes were totally original.
 
 ## Projects Included:
 
@@ -22,17 +17,19 @@ P.S: This Repo respect to Udacity Honor Code. And some of the projects that I ha
   * Intro to PyTorch
   * Intro to Keras
   * Classical Networks(LeNet, Inception Networks, GooLeNet, VGG , LSTMs(A LOTS OF LSTMs), GANs(LOTS OF GANs), etc.)
+  * [Traffic Light Classification](https://github.com/LimberenceCheng/Traffic-Light-Classifier)
+  * [Traffic Sign Classification](https://github.com/LimberenceCheng/self-driving-car-project/blob/master/Term1/Traffic-Sign-Classifier/Traffic_Sign_Classifier.ipynb)
+* Computer Vision
 * Transfer Learning
 * Reinforcement Learning
-* Finding lane lines
-* Traffic sign classification
+* [Finding lane lines](https://github.com/LimberenceCheng/self-driving-car-project/blob/master/Term1/LaneLines/P1.ipynb)
 * Behavioral Cloning
 * Advanced Finding Lane Lines
-* Vehicle Detection
+* [Vehicle Detection](https://github.com/LimberenceCheng/self-driving-car-project/tree/master/Term1/Vehicle-Detection)
 * Bayesian Filter
 * Extended Kalman Filter
 * Unscented Kalman Filter
-* Kalman Filter(Using cpp, completed by myself out of curiosity)
+* [Kalman Filter(Using cpp, completed by myself out of curiosity)](https://github.com/LimberenceCheng/filters)
 * Localization
 * Simultaneous Localization And Mapping(SLAM)
 * Kidnapped Vehicle
