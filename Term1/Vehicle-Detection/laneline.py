@@ -27,9 +27,8 @@ def camera_cal():
             imgpoints.append(corners)
         else:
             corners_not_found.append(fname)
-    print
-    'Corners were found on', str(len(imgpoints)), 'out of', str(len(images)), 'it is', str(
-        len(imgpoints) * 100.0 / len(images)), '% of calibration images'
+    print('Corners were found on', str(len(imgpoints)), 'out of', str(len(images)), 'it is', str(
+        len(imgpoints) * 100.0 / len(images)), '% of calibration images')
     img_size = (img.shape[1], img.shape[0])
     # Do camera calibration given object points and image points
     ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, img_size, None, None)
