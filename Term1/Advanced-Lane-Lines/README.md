@@ -2,14 +2,15 @@
 
 The fourth project of the udacity self-driving car course wanted to improve on our project one with a more advanced lane finding algorithm. The steps of this project were the following:
 
-* Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
+* Computation of camera calibration matrix and distortion coefficients from a set of chessboard images
 * Apply a distortion correction to raw images.
-* Use color transforms, gradients, etc., to create a thresholded binary image.
-* Apply a perspective transform to rectify binary image ("birds-eye view").
-* Detect lane pixels and fit to find the lane boundary.
-* Determine the curvature of the lane and vehicle position with respect to center.
-* Warp the detected lane boundaries back onto the original image.
-* Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
+* Color and Gradient Threshold
+* Birds Eye View
+* Lane Detection and Fit
+* Curvature of Lanes and Vehicle Position with respect to Center
+* Warp back and display information
+* Sanity check
+* Video Processing
 
 In the following I want to point out my solutions to these steps!
 
@@ -23,7 +24,6 @@ Original             |  Undistorted
 ## Thresholded Binary
 
 Now that we estimated the camera matrix for correcting the distortions we can apply these to our images of the road and furthermore use color gradients to form a binary image in which our lane lines should stand out. As there are many parameters to tweak I used the excellent `interact` method from the jupyter notebooks to find the best parameters for seperating lane lines with the different thresholds.
-![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/jupyter_interact.jpg?raw=true)
 
 The result for one of the test images would look like this:
 
@@ -32,6 +32,7 @@ Undistorted             |  Threshed
 ![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/undistorted_example_road1.jpg?raw=true)  |  ![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/threshed_example_road1.jpg?raw=true)
 
 ## Perspective Transformation
+
 We now transform the perspective to a birds eye view for fitting a polynomial to the lane lines. For this we need source and destination points, where the `src points` describe a polygon in the original image which will be transformed to a polygon in the `dst points`. I hardcoded the values and used :
 ```python
 src = np.float32([[293, 668], [587, 458], [703, 458], [1028, 668]])
@@ -46,11 +47,8 @@ Threshed             |  Perspective Transformed
 ## Fitting a polynomial to the lane
 For fitting a polynomial to the perspective transformed and thresholded image we use a sliding histogram approach, where our maximum peaks in the bottom half of the image correspond to the start of the lane. We then subsequently search for the line with the same approach and finally fit a polynomial, which will yield following result:
 
-![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/fitted_example_road1.jpg?raw=true)
-
 ## Video Production
 We now can use this do find lane lines in videos by just performing these procedures on each frame subsequently.
-My resulting video can be found [here](https://github.com/CYHSM/carnd/raw/master/CarND-Advanced-Lane-Lines/out.mp4)
 
 ## Discussion
 Projecting into birds-eye view seems a very nice method for detecting lane lines. I still think that a more robust method can be applied by using a deep learning model.
