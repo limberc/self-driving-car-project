@@ -11,18 +11,14 @@ The projects would so far organized in order of terms where it so far mainly bas
 
 * Machine Learning
 * Deep Learning
-  * Neural Networks
   * Hyperparameter tuning, Regularization and Optimization
-  * Intro to Tensorflow
-  * Intro to PyTorch
-  * Intro to Keras
   * Classical Networks(LeNet, Inception Networks, GooLeNet, VGG , LSTMs(A LOTS OF LSTMs), GANs(LOTS OF GANs), etc.)
   * [Traffic Light Classification](https://github.com/LimberenceCheng/Traffic-Light-Classifier)
   * [Traffic Sign Classification](https://github.com/LimberenceCheng/self-driving-car-project/blob/master/Term1/Traffic-Sign-Classifier/Traffic_Sign_Classifier.ipynb)
 * Computer Vision
 * Transfer Learning
 * Reinforcement Learning
-* [Finding lane lines](https://github.com/LimberenceCheng/self-driving-car-project/blob/master/Term1/LaneLines/P1.ipynb)
+* [Finding lane lines](https://github.com/LimberenceCheng/laneline/blob/master/P1.ipynb)
 * Behavioral Cloning
 * Advanced Finding Lane Lines
 * [Vehicle Detection](https://github.com/LimberenceCheng/self-driving-car-project/tree/master/Term1/Vehicle-Detection)
