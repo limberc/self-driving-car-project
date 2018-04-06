@@ -1,0 +1,3 @@
+[submodule "Term3/Semantic-Segmentation"]
+	path = Term3/Semantic-Segmentation
+	url = https://github.com/LimberenceCheng/Semantic-Segmentation
