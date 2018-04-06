@@ -1,3 +1,6 @@
 [submodule "Term3/Semantic-Segmentation"]
 	path = Term3/Semantic-Segmentation
 	url = https://github.com/LimberenceCheng/Semantic-Segmentation
+[submodule "Term1/LaneLines"]
+	path = Term1/LaneLines
+	url = https://github.com/LimberenceCheng/laneline
