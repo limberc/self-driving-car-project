@@ -34,4 +34,5 @@ The projects would so far organized in order of terms where it so far mainly bas
 * Simultaneous Localization And Mapping(SLAM)
 * Kidnapped Vehicle
 * PID Controller
+* [Semantic-Segmentation](https://github.com/LimberenceCheng/Semantic-Segmentation)
 * Model Predictive Control(MPC)
