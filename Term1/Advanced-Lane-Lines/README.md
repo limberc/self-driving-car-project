@@ -1,6 +1,8 @@
-# Project Four
+# Advanced Lane Line Finding
 
-The fourth project of the udacity self-driving car course wanted to improve on our project one with a more advanced lane finding algorithm. The steps of this project were the following:
+In this project, I would like to build a pipeline on computer vision and deep learning .
+
+The steps of this computer vision part were the following:
 
 * Computation of camera calibration matrix and distortion coefficients from a set of chessboard images
 * Apply a distortion correction to raw images.
@@ -12,14 +14,12 @@ The fourth project of the udacity self-driving car course wanted to improve on o
 * Sanity check
 * Video Processing
 
-In the following I want to point out my solutions to these steps!
-
 ## Camera Calibration
 We are trying to correct images in which the camera should have captured a straight line but due to optical distortion it comes out curved. In order to perform this correction we need to calculate the camera matrix where we need object and image points. The object points are just checkerboard coordinates while the image points are the detected checkerboard edges. I used `cv2.calibrateCamera()` and `cv2.undistort()` for performing the camera calibration, see my code in `advanced_lane_finding.py`, Lines 14-48! The result for one example image looks like the following:
 
 Original             |  Undistorted
 :-------------------------:|:-------------------------:
-![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/camera_cal/calibration1.jpg?raw=true)  |  ![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/undistorted_example1.jpg?raw=true)
+![](camera_cal/calibration1.jpg?raw=true)  | ![](output_images/undistorted_example1.jpg?raw=true) 
 
 ## Thresholded Binary
 
@@ -29,7 +29,7 @@ The result for one of the test images would look like this:
 
 Undistorted             |  Threshed
 :-------------------------:|:-------------------------:
-![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/undistorted_example_road1.jpg?raw=true)  |  ![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/threshed_example_road1.jpg?raw=true)
+![](output_images/undistorted_example_road1.jpg?raw=true)  | ![](output_images/threshed_example_road1.jpg?raw=true) 
 
 ## Perspective Transformation
 
@@ -42,7 +42,7 @@ After perspective transformation the images will loke like this:
 
 Threshed             |  Perspective Transformed
 :-------------------------:|:-------------------------:
-![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/threshed_example_road1.jpg?raw=true)  |  ![](https://github.com/CYHSM/carnd/blob/master/CarND-Advanced-Lane-Lines/output_images/transformed_example_road1.jpg?raw=true)
+![](output_images/threshed_example_road1.jpg?raw=true)  | ![](output_images/transformed_example_road1.jpg?raw=true) 
 
 ## Fitting a polynomial to the lane
 For fitting a polynomial to the perspective transformed and thresholded image we use a sliding histogram approach, where our maximum peaks in the bottom half of the image correspond to the start of the lane. We then subsequently search for the line with the same approach and finally fit a polynomial, which will yield following result:
